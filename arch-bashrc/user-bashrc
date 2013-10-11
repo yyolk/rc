@@ -1,0 +1,13 @@
+#
+# ~/.bashrc
+#
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+alias ls='ls --color=auto'
+#PS1='[\u@\h \W]\$ '
+PS1='\[\033]0;\h: \w\007\]\[\e[1;32m\]\u\[\e[1;32m\]:\[\e[1;34m\]\w \[\e[0m\]\$ '
+
+
+export PATH=$(ruby -rubygems -e "puts Gem.user_dir")/bin:$PATH
