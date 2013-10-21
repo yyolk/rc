@@ -1,0 +1,11 @@
+[Unit]
+Description=BitTorrent Sync application
+
+[Service]
+Type=forking
+User=%i
+ExecStart=/home/yolk/.btsync/btsync --config %h/.config/btsync/btsync.config
+PIDFile=%h/.config/btsync/btsync.pid
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,15 @@
+[Unit]
+Description=rTorrent
+Requires=network.target local-fs.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+KillMode=none
+User=%i
+ExecStart=/usr/bin/tmux new-session -s rt -n rtorrent -d rtorrent
+ExecStop=/usr/bin/tmux send-keys -t rt:rtorrent C-q
+WorkingDirectory=%h
+
+[Install]
+WantedBy=multi-user.target
