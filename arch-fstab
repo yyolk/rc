@@ -1,0 +1,11 @@
+# 
+# /etc/fstab: static file system information
+#
+# <file system>	<dir>	<type>	<options>	<dump>	<pass>
+/dev/mmcblk0p1  /boot           vfat    defaults        0       0
+/dev/sdb1	/media/jbod	auto	defaults,user	0	0
+/dev/sdc1	/media/jbod2	auto	defaults,user	0	0
+#/dev/sdc1	none		swap	defaults	0	0
+/dev/sda2	/media/dl	ext4	defaults,user,noatime,discard	0	2
+/dev/md0	/media/citrus	ext4	defaults,user	0	0
+/dev/sde1	/media/dump	auto	dfaults,user	0	0
