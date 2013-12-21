@@ -1,0 +1,15 @@
+#
+# ~/.bashrc
+#
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+alias ls='ls --color=auto'
+PS1='\[$(tput setaf 3)\]\u\[$(tput setaf 1)\]@\h \W\$ \[$(tput setaf 3)\]'
+
+export LC_ALL=en_US.utf-8 
+export LANG="$LC_ALL" 
+export PATH=$PATH:/opt/vc/bin
+
+#export PS1='\[\e[0;31m\]\u\[\e[m\] \[$(tput setaf 3)\]@\h\[\e[1;34m\]\w\[\e[m\] \[\e[0;31m\]\$ \[\e[m\]\[\e[0;32m\] '
