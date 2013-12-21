@@ -1,6 +1,4 @@
 alias chrome="open -a 'Google Chrome'"
-alias nose="node server*"
-alias noce="node server & chrome 'http://localhost:3000'"
 alias ni="npm install"
 alias cit="python $HOME/code/python/cit/cit.py"
 alias byword='open -a Byword'
@@ -34,6 +32,11 @@ alias mou='open -a Mou'
 alias rcp='scp *.torrent torr:watch && rm *.torrent'
 alias rcpw='scp *.torrent torr:watch_warez && rm *.torrent'
 
+#npm / node
+alias ns='npm start'
+alias nose="node server"
+alias noce="node server & chrome 'http://localhost:3000'"
+
 #alias j=autojump
 D=$'\e[37;40m'
 PINK=$'\e[35;40m'
@@ -60,3 +63,6 @@ export PATH=$HOME/Applications/bin:/usr/local/bin:/usr/local/sbin:$HOME/bin:/usr
 
 export EDITOR='subl -w'
 source $HOME/.githubcreds
+
+PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD}\007"'
+
