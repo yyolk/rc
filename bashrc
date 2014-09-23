@@ -37,6 +37,12 @@ alias ns='npm start'
 alias nose="node server"
 alias noce="node server & chrome 'http://localhost:3000'"
 
+# ssh dev
+function sshpel
+{
+  ssh -i ~/.ssh/pelican_deploy.pem ec2-user@$1
+}
+
 #alias j=autojump
 D=$'\e[37;40m'
 PINK=$'\e[35;40m'
@@ -59,10 +65,20 @@ export PS1='\n${PINK}\u ${D}at ${ORANGE}\h ${D}in ${D}\w\n$(parse_git_branch) â˜
 #export PATH="/Applications/Postgres.app/Contents/MacOS/bin:$PATH"
 #export PATH=$HOME/Applications/bin:/usr/local/bin:/usr/local/sbin:$HOME/bin:/Volumes/underfabric/.rbenv/shims:/usr/local/share/python:/usr/local/share/npm/bin:$PATH
 export PATH=$HOME/Applications/bin:/usr/local/bin:/usr/local/sbin:$HOME/bin:/usr/local/share/npm/bin:$PATH
+#go
+export PATH=$PATH:/usr/local/opt/go/libexec/bin:$HOME/go/bin
+export GOPATH=$HOME/go
+
 #export ANDROID_SDK_ROOT=/usr/local/opt/android-sdk
+
+#rbenv
+export RBENV_ROOT=/usr/local/var/rbenv
 
 export EDITOR='subl -w'
 source $HOME/.githubcreds
 
 PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD}\007"'
+
+
+#sh ~/.bash_login
 
