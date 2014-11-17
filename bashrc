@@ -18,6 +18,9 @@ alias fgrep='fgrep --color=auto'
 alias grep='grep --color=auto'
 alias love='/Applications/love.app/Contents/MacOS/love'
 
+#tomato alias'
+alias tsst='ssh -L 8008:tomato.yolk.cc:80 dde'
+
 #django
 alias va='source ./venv/bin/activate'
 alias vc='virtualenv venv --distribute'
@@ -71,8 +74,6 @@ export GOPATH=$HOME/go
 
 #export ANDROID_SDK_ROOT=/usr/local/opt/android-sdk
 
-#rbenv
-export RBENV_ROOT=/usr/local/var/rbenv
 
 export EDITOR='subl -w'
 source $HOME/.githubcreds
