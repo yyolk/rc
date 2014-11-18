@@ -24,6 +24,7 @@ alias tsst='ssh -L 8008:tomato.yolk.cc:80 dde'
 #django
 alias va='source ./venv/bin/activate'
 alias vc='virtualenv venv --distribute'
+alias sdj='python manage.py runserver 0.0.0.0:8080'
 
 #redis
 alias sredis='redis-server /usr/local/etc/redis.conf'
