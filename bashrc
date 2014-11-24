@@ -73,7 +73,7 @@ export PATH=$HOME/Applications/bin:/usr/local/bin:/usr/local/sbin:$HOME/bin:/usr
 export PATH=$PATH:./node_modules/.bin
 
 #go
-export PATH=$PATH:/usr/local/opt/go/libexec/bin:$HOME/go/bin
+# export PATH=$PATH:/usr/local/opt/go/libexec/bin:$HOME/go/bin
 export GOPATH=$HOME/go
 
 #export ANDROID_SDK_ROOT=/usr/local/opt/android-sdk
