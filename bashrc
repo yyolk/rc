@@ -69,6 +69,9 @@ export PS1='\n${PINK}\u ${D}at ${ORANGE}\h ${D}in ${D}\w\n$(parse_git_branch) â˜
 #export PATH="/Applications/Postgres.app/Contents/MacOS/bin:$PATH"
 #export PATH=$HOME/Applications/bin:/usr/local/bin:/usr/local/sbin:$HOME/bin:/Volumes/underfabric/.rbenv/shims:/usr/local/share/python:/usr/local/share/npm/bin:$PATH
 export PATH=$HOME/Applications/bin:/usr/local/bin:/usr/local/sbin:$HOME/bin:/usr/local/share/npm/bin:$PATH
+#npm
+export PATH=$PATH:./node_modules/.bin
+
 #go
 export PATH=$PATH:/usr/local/opt/go/libexec/bin:$HOME/go/bin
 export GOPATH=$HOME/go
