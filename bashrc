@@ -42,7 +42,11 @@ alias nose="node server"
 alias noce="node server & chrome 'http://localhost:3000'"
 
 #elasticbeanstalk
-alias ebz="zip -r $(git rev-parse HEAD).zip . -x 'node_modules/*' -x '.git/*' -x '.sass-cache/*' && echo \n\ncreated $(git rev-parse HEAD).zip"
+function ebz
+{
+  zip -r $(git rev-parse "HEAD").zip . -x "node_modules/*" -x ".git/*" -x ".sass-cache/*" 
+  echo \n\ncreated $(git rev-parse "HEAD").zip
+}
 
 # ssh dev
 function sshpel
