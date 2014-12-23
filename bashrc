@@ -48,6 +48,10 @@ function ebz
   echo \n\ncreated $(git rev-parse "HEAD").zip
 }
 
+# ssh alias'
+
+alias sshk='ssh -o "UserKnownHostsFile /dev/null" $@'
+
 # ssh dev
 function sshpel
 {
@@ -87,7 +91,7 @@ export GOPATH=$HOME/go
 
 
 export EDITOR='subl -w'
-source $HOME/.githubcreds
+#source $HOME/.githubcreds
 
 PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD}\007"'
 
