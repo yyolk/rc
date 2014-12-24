@@ -67,6 +67,10 @@ ORANGE=$'\e[33;40m'
 # http://www.simplisticcomplexity.com/2008/03/13/show-your-git-branch-name-in-your-prompt/
 #   username@Machine ~/dev/dir[master]$   # clean working directory
 #   username@Machine ~/dev/dir[master*]$  # dirty working directory
+
+
+alias ttdde='ssh -L 8008:tomato.yolk.cc:80 dde'
+
  
 function parse_git_dirty {
   [[ $(git status 2> /dev/null | tail -n1) != "nothing to commit, working directory clean" ]] && echo "*"
