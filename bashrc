@@ -69,9 +69,12 @@ ORANGE=$'\e[33;40m'
 #   username@Machine ~/dev/dir[master*]$  # dirty working directory
 
 
+# tomato tunnel
 alias ttdde='ssh -L 8008:tomato.yolk.cc:80 dde'
 
- 
+# boot2docker init
+$(boot2docker shellinit) && clear && cat $HOME/rc/b2dlogo.txt | lolcat
+
 function parse_git_dirty {
   [[ $(git status 2> /dev/null | tail -n1) != "nothing to commit, working directory clean" ]] && echo "*"
 }
