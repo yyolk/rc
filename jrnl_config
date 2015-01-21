@@ -1,0 +1,14 @@
+{
+  "default_hour": 9, 
+  "timeformat": "%Y-%m-%d %H:%M", 
+  "linewrap": 79, 
+  "encrypt": true, 
+  "editor": "subl -w", 
+  "default_minute": 0, 
+  "highlight": true, 
+  "journals": {
+    "default": "/Users/yolk/journal.txt",
+    "dayone": "~/Library/Mobile Documents/5U8NS4GX82~com~dayoneapp~dayone/Documents/Journal_dayone"
+  }, 
+  "tagsymbols": "@"
+}
