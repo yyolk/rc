@@ -3,3 +3,5 @@ clear
 figlet -f epic "YO YOLK!" | lolcat && echo -e "\n\n\n"
 # boot2docker init
 cat $HOME/rc/b2dlogo.txt | lolcat && $(boot2docker shellinit) && clear
+sleep .5
+clear
