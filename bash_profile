@@ -10,11 +10,11 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
   fi
 
 
-export PYENV_ROOT=/usr/local/opt/pyenv
 
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
-export PYENV_VIRTUALENVWRAPPER_PREFER_PYVENV="true"
 
+export PYENV_ROOT=/usr/local/opt/pyenv
+export PYENV_VIRTUALENVWRAPPER_PREFER_PYVENV="true"
 
 
 
