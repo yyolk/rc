@@ -18,8 +18,9 @@ export PYENV_VIRTUALENVWRAPPER_PREFER_PYVENV="true"
 
 
 
-[[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
+source ~/.bashrc
 
+[[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
 
 # {{{
 # Node Completion - Auto-generated, do not touch.
@@ -29,6 +30,3 @@ export PYENV_VIRTUALENVWRAPPER_PREFER_PYVENV="true"
 #  test -f "$f" && . "$f"
 #done
 # }}}
-
-
-source ~/.bashrc
