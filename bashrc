@@ -1,6 +1,6 @@
 source $HOME/rc/aliases
-
 source $HOME/rc/docker_boot
+
 
 D=$'\e[37;40m'
 PINK=$'\e[35;40m'
