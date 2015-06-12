@@ -74,4 +74,17 @@ alias ttdde='ssh -L 8008:tomato.yolk.cc:80 dde'
 
 # boot2docker
 alias b2d=boot2docker
-alias b2dsi=$(boot2docker shellinit)
+alias b2dsi='boot2docker shellinit'
+
+
+# log commands
+#alias llast='echo $(history -p !!) >>cmd.log'
+function llast
+{
+ set -x
+ echo $(history -p !!) >>cmd.log
+}
+
+
+# ask politely
+alias please='sudo $(history -p !!)'
