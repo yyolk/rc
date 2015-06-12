@@ -81,8 +81,8 @@ alias b2dsi='boot2docker shellinit'
 #alias llast='echo $(history -p !!) >>cmd.log'
 function llast
 {
- set -x
  echo $(history -p !!) >>cmd.log
+ cat cmd.log
 }
 
 
