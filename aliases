@@ -53,7 +53,7 @@ function ebz
 alias sshk='ssh -o "UserKnownHostsFile /dev/null" $@'
 
 # tree alias
-alias t='tree -L 2'
+alias tt='tree -L 2'
 
 # brew alias'
 alias bbu='brew update -v && brew upgrade -v'
