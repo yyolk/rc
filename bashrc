@@ -42,3 +42,4 @@ PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD}\007"'
 
 #sh ~/.bash_login
 
+complete -C aws_completer aws
