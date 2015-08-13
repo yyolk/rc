@@ -11,6 +11,7 @@ alias pshttp="python -m SimpleHTTPServer"
 alias g="git"
 alias gc="git commit"
 alias gs="git status"
+alias gp="git push"
 alias ggh="git push ; git push heroku master"
 
 alias egrep='egrep --color=auto'
