@@ -22,6 +22,8 @@ source ~/.bashrc
 
 [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
 
+complete -C aws_completer aws
+
 # {{{
 # Node Completion - Auto-generated, do not touch.
 #shopt -s progcomp
