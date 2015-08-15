@@ -22,6 +22,7 @@ source ~/.bashrc
 
 [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
 
+# aws completion
 complete -C aws_completer aws
 
 # {{{
