@@ -16,10 +16,15 @@ function parse_git_dirty {
   [[ $(git status 2> /dev/null | tail -n1) != "nothing to commit, working directory clean" ]] && echo "*"
 }
 function parse_git_branch {
-  git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/[\1$(parse_git_dirty)]/"
+  git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/\1/"
+}
+function format_git_branch {
+ [[ $(parse_git_branch | tail -n1) != "" ]] && echo "[$(parse_git_branch)$(parse_git_dirty)]" 
 }
 
-export PS1='\n${PINK}\u ${D}at ${ORANGE}\h ${D}in ${D}\w\n$(parse_git_branch) ☯ '
+alias git_branch=parse_git_branch
+
+export PS1='\n${PINK}\u ${D}at ${ORANGE}\h ${D}in ${D}\w\n$(format_git_branch) ☯ '
 
 #export PATH="/Applications/Postgres.app/Contents/MacOS/bin:$PATH"
 #export PATH=$HOME/Applications/bin:/usr/local/bin:/usr/local/sbin:$HOME/bin:/Volumes/underfabric/.rbenv/shims:/usr/local/share/python:/usr/local/share/npm/bin:$PATH
