@@ -97,3 +97,6 @@ alias please='sudo $(history -p !!)'
 # date shortys
 # 20151007-0350PM
 alias tdate='date +"%Y%m%d-%I%M%p"'
+alias ttd=tdate
+alias ddate='date +"%Y%m%d"'
+alias ddd=ddate
