@@ -45,7 +45,7 @@ alias noce="node server & chrome 'http://localhost:3000'"
 #elasticbeanstalk
 function ebz
 {
-  zip -r $(git rev-parse "HEAD").zip . -x "node_modules/*" -x ".git/*" -x ".sass-cache/*" 
+  zip -r $(git rev-parse "HEAD").zip . -x "node_modules/*" -x ".git/*" -x ".sass-cache/*"
   echo \n\ncreated $(git rev-parse "HEAD").zip
 }
 
@@ -93,3 +93,7 @@ function llast
 
 # ask politely
 alias please='sudo $(history -p !!)'
+
+# date shortys
+# 20151007-0350PM
+alias tdate='date +"%Y%m%d-%I%M%p"'
