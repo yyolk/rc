@@ -101,3 +101,6 @@ alias ttd=tdate
 # 20151007
 alias ddate='date +"%Y%m%d"'
 alias ddd=ddate
+
+alias bcc='brew update -v && brew upgrade -v --all'
+alias bccu'bcc && brew -v cleanup'
