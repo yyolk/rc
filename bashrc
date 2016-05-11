@@ -46,3 +46,5 @@ PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD}\007"'
 
 
 #sh ~/.bash_login
+
+source $HOME/rc/helpers.sh
