@@ -107,3 +107,6 @@ alias bcc='brew update -v && brew upgrade -v --all'
 alias bccu'bcc && brew -v cleanup'
 
 alias wtth='curl http://wttr.in/60607'
+
+#jira
+alias jss=jsprint
