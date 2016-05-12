@@ -16,12 +16,10 @@ export PYENV_VIRTUALENVWRAPPER_PREFER_PYVENV="true"
 
 
 
-source ~/.bashrc
+. ~/.bashrc
 
-[[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
-
-# aws completion
-complete -C aws_completer aws
+## Completions
+. $HOME/rc/completions
 
 # {{{
 # Node Completion - Auto-generated, do not touch.
