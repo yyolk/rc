@@ -14,6 +14,8 @@ source $HOME/rc/prompt
 # android
 . $HOME/rc/bashrc.d/android
 
+# python
+. $HOME/rc/bashrc.d/python
 
 export EDITOR='subl -w'
 #source $HOME/.githubcreds
