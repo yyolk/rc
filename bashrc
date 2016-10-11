@@ -17,6 +17,9 @@ source $HOME/rc/prompt
 # python
 . $HOME/rc/bashrc.d/python
 
+# less-highlighting
+. $HOME/rc/bashrc.d/less-highlighting
+
 export EDITOR='subl -w'
 #source $HOME/.githubcreds
 
