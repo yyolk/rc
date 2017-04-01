@@ -17,6 +17,23 @@ linkme bashrc
 linkme bash_profile
 linkme bash_logout
 linkme tmux.conf
+
+# vim
+# it will already check if it exists
 linkme vim
+
+# neovim
+echo 'linking vimrc for neovim, if vimrc exists'
+if [ -e $HOME/.vim/vimrc ] ; then
+	echo 'vimrc exists'
+	ln -s $HOME/.vim $HOME/.config/nvim
+    echo "Linked $HOME/.vim to $HOME/.config/nvim"
+    ln -s $HOME/.vimrc $HOME/.config/nvim/init.vim
+    echo "Linked $HOME/.vimrc $HOME/.config/nvim/init.vim"
+else
+    echo "Skpped linking $HOME/.config/nvim , $HOME/.vim/vimrc doesn't exist"
+fi
+
+
 
 echo "Done"
