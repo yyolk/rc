@@ -17,5 +17,6 @@ linkme bashrc
 linkme bash_profile
 linkme bash_logout
 linkme tmux.conf
+linkme vim
 
 echo "Done"
