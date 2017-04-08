@@ -4,7 +4,7 @@ rc
 my rc files
 
 
-##setup
+## setup
 
 clone and run:
 
