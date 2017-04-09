@@ -111,3 +111,10 @@ alias wtth='curl http://wttr.in/60607'
 
 #jira
 alias jss=jsprint
+
+#gitignore.io api
+git_ignore_api()
+{
+    curl -L "https://gitignore.io/api/$@"
+}
+alias gitignore=git_ignore_api

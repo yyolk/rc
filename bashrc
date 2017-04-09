@@ -27,3 +27,6 @@ export EDITOR='subl -w'
 #sh ~/.bash_login
 
 source $HOME/rc/helpers.sh
+
+# added by travis gem
+[ -f /Users/yolk/.travis/travis.sh ] && source /Users/yolk/.travis/travis.sh
