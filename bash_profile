@@ -20,3 +20,4 @@ export PYENV_VIRTUALENVWRAPPER_PREFER_PYVENV="true"
 
 ## Completions
 . $HOME/rc/completions
+eval $(/usr/libexec/path_helper -s)
