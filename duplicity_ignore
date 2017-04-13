@@ -1,4 +1,12 @@
 **node_modules**
 **venv**
 **target**
-
+**.terraform**
+**ios/**/Pods
+**anaconda**
+**.ivy2
+**.npm
+**.atom
+**.vagrant.d
+**.gem
+**.nuget
