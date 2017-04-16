@@ -11,3 +11,4 @@
 **.gem
 **.nuget
 **.cache/duplicity**
+**.cache/chrom**
