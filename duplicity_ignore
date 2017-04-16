@@ -11,5 +11,3 @@
 **.gem
 **.nuget
 **.cache/**
-+ **.cache/awesome**
-+ **.cache/keybase**
