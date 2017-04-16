@@ -12,15 +12,15 @@ source $HOME/rc/prompt
 . $HOME/rc/bashrc.d/golang
 
 # android
-. $HOME/rc/bashrc.d/android
+#. $HOME/rc/bashrc.d/android
 
 # python
-. $HOME/rc/bashrc.d/python
+#. $HOME/rc/bashrc.d/python
 
 # less-highlighting
 . $HOME/rc/bashrc.d/less-highlighting
 
-export EDITOR='subl -w'
+#export EDITOR='subl -w'
 #source $HOME/.githubcreds
 
 
