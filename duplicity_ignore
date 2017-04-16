@@ -10,5 +10,6 @@
 **.vagrant.d
 **.gem
 **.nuget
-**.cache/duplicity**
-**.cache/chrom**
+**.cache/**
++ **.cache/awesome**
++ **.cache/keybase**
