@@ -10,3 +10,4 @@
 **.vagrant.d
 **.gem
 **.nuget
+**.cache/duplicity**
