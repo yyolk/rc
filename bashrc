@@ -30,3 +30,6 @@ source $HOME/rc/helpers.sh
 
 # added by travis gem
 [ -f /Users/yolk/.travis/travis.sh ] && source /Users/yolk/.travis/travis.sh
+
+# added by fzf
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
