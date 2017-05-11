@@ -44,11 +44,19 @@ alias ns='npm start'
 alias nose="node server"
 alias noce="node server & chrome 'http://localhost:3000'"
 
+
+## AWS
 #elasticbeanstalk
 function ebz
 {
   zip -r $(git rev-parse "HEAD").zip . -x "node_modules/*" -x ".git/*" -x ".sass-cache/*"
   echo \n\ncreated $(git rev-parse "HEAD").zip
+}
+
+#stacknames
+function stacknames
+{
+  aws cloudformation describe-stacks | jq ".Stacks[].StackName"
 }
 
 # ssh alias'
