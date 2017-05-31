@@ -20,7 +20,8 @@ source $HOME/rc/prompt
 # less-highlighting
 . $HOME/rc/bashrc.d/less-highlighting
 
-export EDITOR='subl -w'
+#export EDITOR='subl -w'
+export EDITOR='vim'
 #source $HOME/.githubcreds
 
 
