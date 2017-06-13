@@ -132,4 +132,4 @@ disassociate_idea_modules()
   cd .idea/modules
   for i in *-build.iml ; do sed -e s/\\/Users\\/`whoami`/\$USER_HOME\$/g -i "" $i ; done
 }
- 
+alias fix_disassociate_idea_modules=disassociate_idea_modules 
