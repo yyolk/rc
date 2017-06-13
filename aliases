@@ -126,3 +126,10 @@ git_ignore_api()
     curl -L "https://gitignore.io/api/$@"
 }
 alias gitignore=git_ignore_api
+
+disassociate_idea_modules()
+{
+  cd .idea/modules
+  for i in *-build.iml ; do sed -e s/\\/Users\\/`whoami`/\$USER_HOME\$/g -i "" $i ; done
+}
+ 
