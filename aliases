@@ -68,6 +68,7 @@ alias tt='tree -L 2'
 
 # brew alias'
 alias bbu='brew update -v && brew upgrade -v'
+alias bbuc='bbu && brew cleanup -v'
 
 # ssh dev
 function sshpel
