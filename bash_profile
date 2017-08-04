@@ -11,7 +11,7 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 
-if which pyenv > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
+if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
 
 export PYENV_ROOT=/usr/local/opt/pyenv
 export PYENV_VIRTUALENVWRAPPER_PREFER_PYVENV="true"
