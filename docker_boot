@@ -1,7 +1,10 @@
 clear
+if which lolcat > /dev/null; then 
 # yo yolk
-figlet -f epic "YO YOLK!" | lolcat && echo -e "\n\n\n"
+  figlet -f epic "YO YOLK!" | lolcat  && echo -e "\n\n\n"
+
+  cat $HOME/rc/b2dlogo.txt | lolcat  && eval $(dmd) && clear
 # boot2docker init
-cat $HOME/rc/b2dlogo.txt | lolcat && eval $(dmd) && clear
-sleep .5
-clear
+  sleep .5
+  clear
+fi
