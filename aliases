@@ -138,3 +138,16 @@ alias fix_disassociate_idea_modules=disassociate_idea_modules
 
 ## bofh
 alias bofh="telnet towel.blinkenlights.nl 666"
+
+
+## castnow `screen -S cast_session`
+#this can be better
+alias castnow_screen="screen -d -m -S cast_session castnow"
+alias castnow_playpause="screen -S cast_session -X stuff ' '"
+alias castnow_back="screen -S cast_session -X stuff $'\e[D'"
+alias castnow_forward="screen -S cast_session -X stuff $'\e[C'"
+alias castnow_volumeup="screen -S cast_session -X stuff $'\e[A'"
+alias castnow_volumedown="screen -S cast_session -X stuff $'\e[B'"
+alias castnow_mute="screen -S cast_session -X stuff 'm'"
+alias castnow_stop="screen -S cast_session -X stuff 's'"
+alias castnow_quit="screen -S cast_session -X stuff 'q'"
