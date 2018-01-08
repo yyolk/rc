@@ -1,6 +1,7 @@
 source $HOME/rc/aliases
 source $HOME/rc/docker_boot
 source $HOME/rc/prompt
+source $HOME/rc/iloan/aliases
 
 # ruby
 . $HOME/rc/bashrc.d/ruby
