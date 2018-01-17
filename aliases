@@ -151,3 +151,7 @@ alias castnow_volumedown="screen -S cast_session -X stuff $'\e[B'"
 alias castnow_mute="screen -S cast_session -X stuff 'm'"
 alias castnow_stop="screen -S cast_session -X stuff 's'"
 alias castnow_quit="screen -S cast_session -X stuff 'q'"
+
+
+## ls-go
+alias ll='ls-go'
