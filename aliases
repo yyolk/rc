@@ -154,4 +154,4 @@ alias castnow_quit="screen -S cast_session -X stuff 'q'"
 
 
 ## ls-go
-alias ll='ls-go'
+alias ll='ls-go -alkSi'
