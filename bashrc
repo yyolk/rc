@@ -1,8 +1,7 @@
-source $HOME/rc/aliases
-source $HOME/rc/docker_boot
+#source $HOME/rc/docker_boot
 source $HOME/rc/prompt
-source $HOME/rc/iloan/aliases
-
+source $HOME/rc/aliases
+source $HOME/rc/aliases.d/*
 # ruby
 . $HOME/rc/bashrc.d/ruby
 
