@@ -1,25 +1,41 @@
+load_if_exists()
+{
+  if [ -f "$1" ] ; then
+    echo "Loading $1"
+    . "$1"
+  else
+    echo "Skipping $1, since it's not local"
+  fi
+}
+
 #source $HOME/rc/docker_boot
-source $HOME/rc/prompt
-source $HOME/rc/aliases
-source $HOME/rc/aliases.d/*
-# ruby
-. $HOME/rc/bashrc.d/ruby
+load_if_exists $HOME/rc/prompt
+load_if_exists $HOME/rc/aliases
+load_if_exists $HOME/rc/aliases.d/*
 
-# node
-. $HOME/rc/bashrc.d/node
-
-# go
-. $HOME/rc/bashrc.d/golang
-
-# android
-. $HOME/rc/bashrc.d/android
-
-# python
-. $HOME/rc/bashrc.d/python
 
 # less-highlighting
-. $HOME/rc/bashrc.d/less-highlighting
+load_if_exists $HOME/rc/bashrc.d/less-highlighting
 
+# ruby
+load_if_exists $HOME/rc/bashrc.d/ruby
+
+# node
+load_if_exists $HOME/rc/bashrc.d/node
+
+# go
+load_if_exists $HOME/rc/bashrc.d/golang
+
+# android
+load_if_exists $HOME/rc/bashrc.d/android
+
+# python
+load_if_exists $HOME/rc/bashrc.d/python
+
+# google-cloud-sdk
+load_if_exists $HOME/rc/bashrc.d/google-cloud-sdk
+
+sleep 0.1 && clear
 #export EDITOR='subl -w'
 export EDITOR='vim'
 #source $HOME/.githubcreds
