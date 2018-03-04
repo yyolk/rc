@@ -1,3 +1,5 @@
+#make pythons a little faster
+export CFLAGS='-O2'
 
 export PYENV_ROOT=/usr/local/opt/pyenv
 export PYENV_VIRTUALENVWRAPPER_PREFER_PYVENV="true"
