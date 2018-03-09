@@ -1,5 +1,10 @@
+export CFLAGS="-I$(xcrun --show-sdk-path)/usr/include" 
 #make pythons a little faster
-export CFLAGS='-O2'
+export CFLAGS="$CFLAGS"" -O2"
+
+#https://github.com/pyenv/pyenv/wiki/Common-build-problems#error-the-python-ssl-extension-was-not-compiled-missing-the-openssl-lib
+export CFLAGS="-I$(brew --prefix openssl)/include"
+export LDFLAGS="-L$(brew --prefix openssl)/lib" 
 
 export PYENV_ROOT=/usr/local/opt/pyenv
 export PYENV_VIRTUALENVWRAPPER_PREFER_PYVENV="true"
