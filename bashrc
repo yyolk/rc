@@ -35,6 +35,9 @@ load_if_exists $HOME/rc/bashrc.d/python
 # google-cloud-sdk
 load_if_exists $HOME/rc/bashrc.d/google-cloud-sdk
 
+# rust - cargo
+load_if_exists $HOME/rc/bashrc.d/rust
+
 sleep 0.1 && clear
 #export EDITOR='subl -w'
 export EDITOR='vim'

@@ -1,0 +1,17 @@
+function avdiff() {
+  if [ -z "$1" -o -z "$2" ]; then
+    echo "usage: avdiff <branch> <file>"
+    return 1
+  fi
+
+  local branch="$1"
+  local abspath=$(realpath $PWD/$2)
+  local gitpath=$(git rev-parse --show-toplevel)
+  local file=${abspath#"$gitpath"/}
+
+  echo "Diff of $file"
+
+  colordiff \
+    <( ansible-vault view <( git show "${branch}":"${file}" )) \
+    <( ansible-vault view $2)
+} 
