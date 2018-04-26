@@ -15,6 +15,7 @@ alias gs="git status"
 alias gp="git push"
 alias ggh="git push ; git push heroku master"
 alias glo="git log --graph --decorate --oneline"
+alias gbc="git_branch | pbcopy"
 
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
