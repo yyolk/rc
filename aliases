@@ -93,7 +93,6 @@ alias ttdde='ssh -L 8008:tomato.yolk.cc:80 dde'
 alias dm=docker-machine
 alias dmd='docker-machine env default'
 
-
 # log commands
 #alias llast='echo $(history -p !!) >>cmd.log'
 function llast
@@ -156,3 +155,4 @@ alias castnow_quit="screen -S cast_session -X stuff 'q'"
 
 ## ls-go
 alias ll='ls-go -alkSi'
+source $HOME/rc/aliases.d/*

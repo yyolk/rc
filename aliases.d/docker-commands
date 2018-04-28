@@ -1,0 +1,1 @@
+alias dcaniusepython3='docker run --rm -v $(pwd):/ws:ro  -t yyolk/caniusepython3'
