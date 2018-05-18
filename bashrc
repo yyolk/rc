@@ -11,7 +11,7 @@ load_if_exists()
 #source $HOME/rc/docker_boot
 load_if_exists $HOME/rc/prompt
 load_if_exists $HOME/rc/aliases
-load_if_exists $HOME/rc/aliases.d/docker
+load_if_exists $HOME/rc/aliases.d/docker-commands
 load_if_exists $HOME/rc/aliases.d/terraform
 
 
