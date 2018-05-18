@@ -1,0 +1,2 @@
+alias ti="terraform init"
+alias tlp="terraform plan"
