@@ -1,3 +1,5 @@
 alias ti="terraform init"
 alias tp="terraform plan"
 alias tlp="terraform plan | landscape"
+alias ta="terraform apply"
+alias TAY="terraform apply -auto-approve"
