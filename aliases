@@ -109,6 +109,7 @@ alias please='sudo $(history -p !!)'
 # 20151007-0350PM
 alias tdate='date +"%Y%m%d-%I%M%p"'
 alias ttd=tdate
+alias ttdpbc='ttd | pbcopy'
 # 20151007
 alias ddate='date +"%Y%m%d"'
 alias ddd=ddate
