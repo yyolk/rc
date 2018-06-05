@@ -1,1 +1,2 @@
---type-set tfstate:ext:tfstate,backup
+--type-set
+tfstate:ext:tfstate,backup
