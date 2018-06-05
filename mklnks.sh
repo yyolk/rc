@@ -39,5 +39,6 @@ else
 fi
 
 
+linkme ackrc
 
 echo "Done"
