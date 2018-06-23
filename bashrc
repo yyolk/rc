@@ -13,7 +13,7 @@ load_if_exists $HOME/rc/prompt
 load_if_exists $HOME/rc/aliases
 load_if_exists $HOME/rc/aliases.d/docker-commands
 load_if_exists $HOME/rc/aliases.d/terraform
-
+load_if_exists $HOME/rc/aliases.d/todoist
 
 # less-highlighting
 load_if_exists $HOME/rc/bashrc.d/less-highlighting

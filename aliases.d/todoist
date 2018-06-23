@@ -1,0 +1,6 @@
+#shopt -s
+#alias t="todoist --color" 
+alias t="todoist"
+alias tl='t l'
+alias ts='t s'
+alias tsl='ts && tl'
