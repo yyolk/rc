@@ -17,6 +17,7 @@ linkme bashrc
 linkme bash_profile
 linkme bash_logout
 linkme tmux.conf
+linkme gitignore_global
 
 # vim
 # it will already check if it exists

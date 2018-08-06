@@ -1,7 +1,7 @@
 #rbenv
 #export RBENV_ROOT=/usr/local/var/rbenv
 
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+#if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 #[[ -f `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 
@@ -12,8 +12,8 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 
 
-. ~/.bashrc
+#. ~/.bashrc
 
 ## Completions
-. $HOME/rc/completions
-eval $(/usr/libexec/path_helper -s)
+#. $HOME/rc/completions
+#eval $(/usr/libexec/path_helper -s)
