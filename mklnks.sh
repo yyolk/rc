@@ -36,7 +36,8 @@ linkme tmux.conf
 
 # vim
 # it will already check if it exists
-vim_plug_install && linkme vim && vim +PlugInstall +PlugUpdate +qall
+linkme vim 
+vim_plug_install && vim +PlugInstall +PlugUpdate +qall
 
 
 # neovim
