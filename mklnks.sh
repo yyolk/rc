@@ -23,6 +23,12 @@ get_bash_logout_deps()
   cd - 
 }
 
+vim_plug_install()
+{
+  curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+}
+
 linkme bashrc
 linkme bash_profile
 get_bash_logout_deps && linkme bash_logout
@@ -30,7 +36,7 @@ linkme tmux.conf
 
 # vim
 # it will already check if it exists
-linkme vim
+vim_plug_install && linkme vim && vim +PlugInstall +PlugUpdate +qall
 
 
 # neovim
