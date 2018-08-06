@@ -13,7 +13,7 @@ linkme ()
     fi
 }
 
-get_deps()
+get_bash_logout_deps()
 {
   #seeyouspacecowboy
   mkdir -p ~/bin
@@ -25,14 +25,13 @@ get_deps()
 
 linkme bashrc
 linkme bash_profile
-linkme bash_logout
+get_bash_logout_deps && linkme bash_logout
 linkme tmux.conf
 
 # vim
 # it will already check if it exists
 linkme vim
 
-get_deps
 
 # neovim
 echo 'linking vimrc for neovim, if vimrc exists'
