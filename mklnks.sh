@@ -13,15 +13,33 @@ linkme ()
     fi
 }
 
+get_bash_logout_deps()
+{
+  #seeyouspacecowboy
+  mkdir -p ~/bin
+  cd ~/bin
+  curl -LO https://gist.githubusercontent.com/danielrehn/d2e6f2129e5f853c3166/raw/2a1017b92335aacd72018b9e312a294cc6a0e73c/seeyouspacecowboy.sh
+  chmod +x seeyouspacecowboy.sh
+  cd - 
+}
+
+vim_plug_install()
+{
+  curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+}
+
 linkme bashrc
 linkme bash_profile
-linkme bash_logout
+get_bash_logout_deps && linkme bash_logout
 linkme tmux.conf
 linkme gitignore_global
 
 # vim
 # it will already check if it exists
-linkme vim
+linkme vim 
+vim_plug_install && vim +PlugInstall +PlugUpdate +qall
+
 
 # neovim
 echo 'linking vimrc for neovim, if vimrc exists'
