@@ -39,6 +39,9 @@ load_if_exists $HOME/rc/bashrc.d/google-cloud-sdk
 # rust - cargo
 load_if_exists $HOME/rc/bashrc.d/rust
 
+# z
+load_if_exists /usr/local/etc/profile.d/z.sh
+
 sleep 0.1 && clear
 #export EDITOR='subl -w'
 export EDITOR='vim'
