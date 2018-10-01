@@ -47,6 +47,8 @@ sleep 0.1 && clear
 export EDITOR='vim'
 #source $HOME/.githubcreds
 
+export PATH=$HOME/bin:$PATH
+
 
 #sh ~/.bash_login
 
