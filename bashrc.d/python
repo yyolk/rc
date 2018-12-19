@@ -3,8 +3,18 @@ export CFLAGS="-I$(xcrun --show-sdk-path)/usr/include"
 export CFLAGS="$CFLAGS"" -O2"
 
 #https://github.com/pyenv/pyenv/wiki/Common-build-problems#error-the-python-ssl-extension-was-not-compiled-missing-the-openssl-lib
-export CFLAGS="-I$(brew --prefix openssl)/include"
-export LDFLAGS="-L$(brew --prefix openssl)/lib" 
+export CFLAGS="$CFLAGS -I$(brew --prefix openssl)/include"
+export LDFLAGS="$LDFLAGS -L$(brew --prefix openssl)/lib" 
+#SQLITE3
+export LDFLAGS="$LDFLAGS -L$(brew --prefix sqlite)/lib"
+export CPPFLAGS="$CPPFLAGS -I$(brew --prefix sqlite)/include"
+export PKG_CONFIG_PATH="$PKG_CONFIG_PATH:$(brew --prefix sqlite)/lib/pkgconfig"
+#ZLIB
+export LDFLAGS="$LDFLAGS -L/usr/local/opt/zlib/lib"
+export CPPFLAGS="$CPPFLAGS -I/usr/local/opt/zlib/include"
+export PKG_CONFIG_PATH="$PKG_CONFIG_PATH:/usr/local/opt/zlib/lib/pkgconfig"
+
+
 
 #not correct if using pyenv-installer
 #export PYENV_ROOT=/usr/local/opt/pyenv
