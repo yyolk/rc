@@ -1,8 +1,9 @@
-[[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
+#[[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
 
 # aws completion
 complete -C aws_completer aws
 
+if which kubectl > /dev/null ; then source <(kubectl completion bash) ; fi
 
 # {{{
 # Node Completion - Auto-generated, do not touch.
