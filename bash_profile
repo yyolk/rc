@@ -5,15 +5,15 @@
 
 #[[ -f `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 
-  if [ -f $(brew --prefix)/etc/bash_completion ]; then
-    . $(brew --prefix)/etc/bash_completion
-  fi
+# if [ -f $(brew --prefix)/etc/bash_completion ]; then
+#   . $(brew --prefix)/etc/bash_completion
+# fi
 
 
 
 
-#. ~/.bashrc
+. ~/.bashrc
 
 ## Completions
-#. $HOME/rc/completions
+. $HOME/rc/completions
 #eval $(/usr/libexec/path_helper -s)
