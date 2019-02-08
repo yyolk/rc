@@ -12,7 +12,7 @@
 
 
 
-. ~/.bashrc
+#. ~/.bashrc
 
 ## Completions
 . $HOME/rc/completions
