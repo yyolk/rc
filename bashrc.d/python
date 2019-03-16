@@ -5,16 +5,19 @@ export CFLAGS="$CFLAGS"" -O2"
 #https://github.com/pyenv/pyenv/wiki/Common-build-problems#error-the-python-ssl-extension-was-not-compiled-missing-the-openssl-lib
 export CFLAGS="$CFLAGS -I$(brew --prefix openssl)/include"
 export LDFLAGS="$LDFLAGS -L$(brew --prefix openssl)/lib" 
-export PKG_CONFIG_PATH="/usr/local/opt/openssl/lib/pkgconfig"
+#export PKG_CONFIG_PATH="/usr/local/opt/openssl/lib/pkgconfig"
 #SQLITE3
 export LDFLAGS="$LDFLAGS -L$(brew --prefix sqlite)/lib"
 export CPPFLAGS="$CPPFLAGS -I$(brew --prefix sqlite)/include"
-export PKG_CONFIG_PATH="$PKG_CONFIG_PATH:$(brew --prefix sqlite)/lib/pkgconfig"
+export CFLAGS="-I$(brew --prefix sqlite)/include $CFLAGS"
+export SQLITE3_LIBS="-L$(brew --prefix sqlite)/lib"
+export SQLITE3_CFLAGS="-I$(brew --prefix sqlite)/include"
+export PKG_CONFIG_PATH="$(brew --prefix sqlite)/lib/pkgconfig"
 #ZLIB
 export LDFLAGS="$LDFLAGS -L/usr/local/opt/zlib/lib"
 export CPPFLAGS="$CPPFLAGS -I/usr/local/opt/zlib/include"
 export CFLAGS="-I/usr/local/opt/zlib/include $CFLAGS"
-export PKG_CONFIG_PATH="$PKG_CONFIG_PATH:/usr/local/opt/zlib/lib/pkgconfig"
+#export PKG_CONFIG_PATH="$PKG_CONFIG_PATH:/usr/local/opt/zlib/lib/pkgconfig"
 
 
 
