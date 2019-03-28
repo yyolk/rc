@@ -30,7 +30,7 @@ function format_git_branch {
 
 alias git_branch=parse_git_branch
 
-export PS1='\n${PINK}\u ${LGRAY}at ${ORANGE}\h ${LGRAY}in ${LGRAY}\w\n$(format_git_branch) ☯ ${RESET_ALL}'
+export PS1='\n${PINK}\u ${LGRAY}at ${ORANGE}\h ${LGRAY}in ${LGRAY}\w\[\n\]$(format_git_branch) ☯ ${RESET_ALL}'
 
 #for macosx terminal title, probably works in other things
 PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD}\007"'
