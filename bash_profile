@@ -12,7 +12,12 @@
 
 
 
-. ~/.bashrc
+# i don't know but this is fine for now
+is_a_mac()
+{
+  grep Darwin <<< $(uname -a) > /dev/null
+}
+is_a_mac && . ~/.bashrc
 
 ## Completions
 . $HOME/rc/completions
