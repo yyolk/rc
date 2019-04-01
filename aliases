@@ -157,3 +157,6 @@ alias castnow_quit="screen -S cast_session -X stuff 'q'"
 ## ls-go
 alias ll='ls-go -alkSi'
 
+
+## zookeeper-kafka in-process
+alias zkbg="zookeeper-server-start /usr/local/etc/kafka/zookeeper.properties & kafka-server-start /usr/local/etc/kafka/server.properties"
