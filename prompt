@@ -30,7 +30,10 @@ function format_git_branch {
 
 alias git_branch=parse_git_branch
 
-export PS1='\n${PINK}\u ${LGRAY}at ${ORANGE}\h ${LGRAY}in ${LGRAY}\w\[\n\]$(format_git_branch) ☯ ${RESET_ALL}'
+# O.G.
+#export PS1='\n${PINK}\u ${LGRAY}at ${ORANGE}\h ${LGRAY}in ${LGRAY}\w\[\n\]$(format_git_branch) ☯ ${RESET_ALL}'
+# new should fix back 
+export PS1='\[\n\]${PINK}\u${RESET_ALL} ${LGRAY}at ${RESET_ALL}${ORANGE}\h ${RESET_ALL}${LGRAY}${RESET_ALL}in ${LGRAY}\w${RESET_ALL}\[\n\]$(format_git_branch) \[☯\] ${RESET_ALL}'
 
 #for macosx terminal title, probably works in other things
 PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD}\007"'
