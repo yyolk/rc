@@ -160,3 +160,14 @@ alias ll='ls-go -alkSi'
 
 ## zookeeper-kafka in-process
 alias zkbg="zookeeper-server-start /usr/local/etc/kafka/zookeeper.properties & kafka-server-start /usr/local/etc/kafka/server.properties"
+
+## for bash loops
+
+fakeit()
+{
+  if [ -z "$FAKE_IT" ]; then 
+    echo "$@"
+  else 
+    $@
+  fi 
+}
