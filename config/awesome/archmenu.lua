@@ -4,6 +4,7 @@
  }
 
  local menud334dfcea59127bedfcdbe0a3ee7f494 = {
+     {"GLC_Player", "glc_player", "/usr/share/pixmaps/glc_player.png" },
      {"MeshLab", "meshlab"},
  }
 
@@ -15,8 +16,16 @@
      {"Slack", "env BAMF_DESKTOP_FILE_HINT=/var/lib/snapd/desktop/applications/slack_slack.desktop /var/lib/snapd/snap/bin/slack ", "///var/lib/snapd/snap/slack/20/usr/share/pixmaps/slack.png" },
  }
 
+ local menudf814135652a5a308fea15bff37ea284 = {
+     {"Xpdf", "xpdf ", "/usr/share/pixmaps/xpdf.svg" },
+ }
+
  local menue6f43c40ab1c07cd29e4e83e4ef6bf85 = {
      {"Meld", "meld ", "/usr/share/icons/hicolor/16x16/apps/org.gnome.meld.png" },
+     {"Qt4 Assistant ", "assistant-qt4", "/usr/share/icons/hicolor/32x32/apps/assistant-qt4.png" },
+     {"Qt4 Designer", "designer-qt4", "/usr/share/icons/hicolor/128x128/apps/designer-qt4.png" },
+     {"Qt4 Linguist ", "linguist-qt4", "/usr/share/icons/hicolor/16x16/apps/linguist-qt4.png" },
+     {"Qt4 QDbusViewer ", "qdbusviewer-qt4", "/usr/share/icons/hicolor/32x32/apps/qdbusviewer-qt4.png" },
  }
 
  local menu52dd1c847264a75f400961bfb4d1c849 = {
@@ -28,7 +37,6 @@
 
  local menuee69799670a33f75d45c57d1d1cd0ab3 = {
      {"Avahi Zeroconf Browser", "/usr/bin/avahi-discover"},
-     {"Manage Printing", "/usr/bin/xdg-open http://localhost:631/", "/usr/share/icons/hicolor/16x16/apps/cups.png" },
      {"UXTerm", "uxterm", "/usr/share/pixmaps/xterm-color_48x48.xpm" },
      {"XTerm", "xterm", "/usr/share/pixmaps/xterm-color_48x48.xpm" },
      {"kitty", "kitty", "/usr/share/icons/hicolor/256x256/apps/kitty.png" },
@@ -41,6 +49,7 @@ xdgmenu = {
     {"Accessories", menu98edb85b00d9527ad5acebe451b3fae6},
     {"Graphics", menud334dfcea59127bedfcdbe0a3ee7f494},
     {"Internet", menuc8205c7636e728d448c2774e6a4a944b},
+    {"Office", menudf814135652a5a308fea15bff37ea284},
     {"Programming", menue6f43c40ab1c07cd29e4e83e4ef6bf85},
     {"Sound & Video", menu52dd1c847264a75f400961bfb4d1c849},
     {"System Tools", menuee69799670a33f75d45c57d1d1cd0ab3},
