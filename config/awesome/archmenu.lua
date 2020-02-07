@@ -17,6 +17,7 @@
  }
 
  local menudf814135652a5a308fea15bff37ea284 = {
+     {"Evolution", "evolution "},
      {"Xpdf", "xpdf ", "/usr/share/pixmaps/xpdf.svg" },
  }
 
