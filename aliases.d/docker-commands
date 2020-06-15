@@ -1,1 +1,8 @@
 alias dcaniusepython3='docker run --rm -v $(pwd):/ws:ro  -t yyolk/caniusepython3'
+function docker-compose-remake ()
+{
+  for action in {down,up}
+  do
+    docker-compose $@ $action
+  done
+}
