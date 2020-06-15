@@ -1,0 +1,3 @@
+config/awesome/themes/*.png filter=lfs diff=lfs merge=lfs -text
+config/awesome/themes/*.jpeg filter=lfs diff=lfs merge=lfs -text
+config/awesome/themes/*.jpg filter=lfs diff=lfs merge=lfs -text
