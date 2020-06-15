@@ -30,6 +30,15 @@ xdg_menu = require("archmenu")
 -- Enable hotkeys help widget for VIM and other apps
 -- when client with a matching name is opened:
 require("awful.hotkeys_popup.keys")
+--
+-- awesome-wm-widgets
+-- 
+-- battery widget
+local battery_widget = require("awesome-wm-widgets.battery-widget.battery")
+local batteryarc_widget = require("awesome-wm-widgets.batteryarc-widget.batteryarc")
+-- volume widget
+-- local volume_widget = require("awesome-wm-widgets.volume-widget.volume")
+local volumebar_widget = require("awesome-wm-widgets.volumebar-widget.volumebar")
 
 -- {{{ Error handling
 -- Check if awesome encountered an error during startup and fell back to
@@ -58,7 +67,13 @@ end
 
 -- {{{ Variable definitions
 -- Themes define colours, icons, font and wallpapers.
-beautiful.init(gears.filesystem.get_themes_dir() .. "default/theme.lua")
+-- default theme
+-- beautiful.init(gears.filesystem.get_themes_dir() .. "default/theme.lua")
+beautiful.init(awful.util.getdir("config") .. "/themes/yolksspace/theme.lua")
+-- gears.wallpaper.maximized(beautiful.wallpaper)
+for s = 1, screen.count() do
+	gears.wallpaper.maximized(beautiful.wallpaper, s, true)
+end
 
 -- This is used later as the default terminal and editor to run.
 terminal = "xterm"
@@ -228,6 +243,20 @@ awful.screen.connect_for_each_screen(function(s)
             mykeyboardlayout,
             wibox.widget.systray(),
             mytextclock,
+            -- volume_widget({ volume_audio_controller = "alsa_only", notification = true }),
+            volumebar_widget({
+              width = 40,
+              shape = "partially_rounded_rect",
+              margins = 6,
+              -- main_color = "#af13f7",
+              -- mute_color = "#ff0000",
+              get_volume_cmd = "amixer sget Master",
+              inc_volume_cmd = "amixer sset Master 5%+",
+              dec_volume_cmd = "amixer sset Master 5%-",
+              tog_volume_cmd = "amixer sset Master toggle",
+            }),
+            battery_widget({ notification = true }),
+            -- batteryarc_widget(),
             s.mylayoutbox,
         },
     }
