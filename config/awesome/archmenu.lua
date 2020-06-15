@@ -38,6 +38,7 @@
      {"GTK Youtube Viewer", "gtk-youtube-viewer", "/usr/share/pixmaps/gtk-youtube-viewer.png" },
      {"Qt V4L2 test Utility", "qv4l2", "/usr/share/icons/hicolor/16x16/apps/qv4l2.png" },
      {"Qt V4L2 video capture utility", "qvidcap", "/usr/share/icons/hicolor/16x16/apps/qvidcap.png" },
+     {"VLC media player", "/usr/bin/vlc --started-from-file ", "/usr/share/icons/hicolor/16x16/apps/vlc.png" },
      {"guvcview", "guvcview-qt", "/usr/share/icons/hicolor/128x128/apps/guvcview.png" },
      {"mpv Media Player", "mpv --player-operation-mode=pseudo-gui -- ", "/usr/share/icons/hicolor/16x16/apps/mpv.png" },
  }
