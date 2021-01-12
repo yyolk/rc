@@ -34,8 +34,8 @@ require("awful.hotkeys_popup.keys")
 -- awesome-wm-widgets
 -- 
 -- battery widget
-local battery_widget = require("awesome-wm-widgets.battery-widget.battery")
-local batteryarc_widget = require("awesome-wm-widgets.batteryarc-widget.batteryarc")
+--local battery_widget = require("awesome-wm-widgets.battery-widget.battery")
+--local batteryarc_widget = require("awesome-wm-widgets.batteryarc-widget.batteryarc")
 -- volume widget
 -- local volume_widget = require("awesome-wm-widgets.volume-widget.volume")
 local volumebar_widget = require("awesome-wm-widgets.volumebar-widget.volumebar")
@@ -255,7 +255,7 @@ awful.screen.connect_for_each_screen(function(s)
               dec_volume_cmd = "amixer sset Master 5%-",
               tog_volume_cmd = "amixer sset Master toggle",
             }),
-            battery_widget({ notification = true }),
+            -- battery_widget({ notification = true }),
             -- batteryarc_widget(),
             s.mylayoutbox,
         },
