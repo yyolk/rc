@@ -32,13 +32,21 @@ xdg_menu = require("archmenu")
 require("awful.hotkeys_popup.keys")
 --
 -- awesome-wm-widgets
--- 
+-- cpu widget
+local cpu_widget = require("awesome-wm-widgets.cpu-widget.cpu-widget")
 -- battery widget
 --local battery_widget = require("awesome-wm-widgets.battery-widget.battery")
 --local batteryarc_widget = require("awesome-wm-widgets.batteryarc-widget.batteryarc")
 -- volume widget
 -- local volume_widget = require("awesome-wm-widgets.volume-widget.volume")
 local volumebar_widget = require("awesome-wm-widgets.volumebar-widget.volumebar")
+-- ram widget
+local ram_widget = require("awesome-wm-widgets.ram-widget.ram-widget")
+-- weather widget
+-- local ..
+
+-- modal run box
+local run_shell = require("awesome-wm-widgets.run-shell.run-shell")
 
 -- {{{ Error handling
 -- Check if awesome encountered an error during startup and fell back to
@@ -243,6 +251,8 @@ awful.screen.connect_for_each_screen(function(s)
             mykeyboardlayout,
             wibox.widget.systray(),
             mytextclock,
+            ram_widget(),
+            cpu_widget({ timeout = 5 }),
             -- volume_widget({ volume_audio_controller = "alsa_only", notification = true }),
             volumebar_widget({
               width = 40,
@@ -324,6 +334,10 @@ globalkeys = gears.table.join(
               {description = "reload awesome", group = "awesome"}),
     awful.key({ modkey, "Shift"   }, "q", awesome.quit,
               {description = "quit awesome", group = "awesome"}),
+    -- shortcuts?
+    -- printscr with selsshot
+    awful.key({ modkey, "Shift" }, "p", function () awful.spawn("selsshot.sh") end,
+              {description = "select screenshot", group = "launcher" }),
 
     awful.key({ modkey,           }, "l",     function () awful.tag.incmwfact( 0.05)          end,
               {description = "increase master width factor", group = "layout"}),
@@ -355,7 +369,8 @@ globalkeys = gears.table.join(
               {description = "restore minimized", group = "client"}),
 
     -- Prompt
-    awful.key({ modkey },            "r",     function () awful.screen.focused().mypromptbox:run() end,
+    -- awful.key({ modkey },            "r",     function () awful.screen.focused().mypromptbox:run() end,
+    awful.key({ modkey }, "r", function () run_shell.launch() end,
               {description = "run prompt", group = "launcher"}),
 
     awful.key({ modkey }, "x",
