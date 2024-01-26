@@ -14,4 +14,11 @@
       create: true
 
 - shell:
-    - curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    - command: >
+        [ ! -f ~/.vim/autoload/plug.vim ]
+        &&
+        curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+        ||
+        echo "Plug install skipped, plug.vim already installed."
+      description: Install vim plug, if it's not already installed.
+      stdout: true
