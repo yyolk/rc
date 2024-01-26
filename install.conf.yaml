@@ -22,3 +22,7 @@
         echo "Plug install skipped, plug.vim already installed."
       description: Install vim plug, if it's not already installed.
       stdout: true
+    - command: echo "Before running vim, take a look at these installables for using vim-lsp"
+      stdout: true
+    - command: cat lsp_deps.txt
+      stdout: true
