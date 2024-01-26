@@ -2,6 +2,7 @@
 # brew list --formula -1 | awk '{printf(brew "%s"n,)}'
 # 
 brew "abseil"
+brew "ack"
 brew "actionlint"
 brew "aom"
 brew "apache-arrow"
