@@ -9,6 +9,7 @@
     ~/.vim:
     ~/.zshrc:
     ~/.zprofile:
+    ~/.zlogout:
     ~/.bash_logout.d/seeyouspacecowboy.sh:
       path: seeyouspacecowboy.sh
       create: true
