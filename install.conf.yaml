@@ -1,3 +1,16 @@
-- clean: []
-- link: {}
+- defaults:
+  link:
+    relink: true
+- clean: 
+  - "~"
+- link:
+  ~/.bashrc:
+  ~/.bash_profile:
+  ~/.vim:
+  ~/.zshrc:
+  ~/.zprofile:
+  ~/.bash_logout.d/seeyouspacecowboy.sh:
+    path: seeyouspacecowboy.sh
+    create: true
+
 - shell: []
