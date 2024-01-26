@@ -2,3 +2,4 @@ npm i -g @olrtg/emmet-language-server
 npm i -g bash-language-server
 # Inside a virtualenv
 pip install "python-lsp-server[yapf,rope]"
+npm i -g pyright
