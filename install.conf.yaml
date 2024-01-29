@@ -4,6 +4,9 @@
 - clean: 
   - "~"
 - link:
+    # For aliases lookup
+    #~/rc: "."
+    # ack will be replaced with rg
     ~/.ackrc:
     ~/.bashrc:
     ~/.bash_profile:
