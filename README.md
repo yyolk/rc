@@ -1,10 +1,10 @@
 rc
 ==
 
-my rc files
+My [`rc`][^1] files
 
 
-## setup
+## Setup
 
 Clone
 
@@ -12,13 +12,14 @@ Clone
 git clone git@github.com:yyolk/rc --recursive
 ```
 
-Run
+Run the install script (uses [`dotbot`][dotbot]).
 
 ```sh
-./install.sh
+./install
 ```
 
 
-clone and run:
+[^1]: `rc` means **R**un **C**ommand
 
-`./mklnks.sh && reset`
+
+[dotbot]: https://github.com/anishathalye/dotbot
