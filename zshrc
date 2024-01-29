@@ -6,6 +6,9 @@
 #   fi
 # }
 
+
+source ~/.aliases
+
 # Created by `pipx` on 2024-01-09 21:46:25
 export PATH="$PATH:/Users/yolk/.local/bin"
 

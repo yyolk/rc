@@ -6,6 +6,9 @@
 - link:
     # For aliases lookup
     #~/rc: "."
+    ~/.aliases:
+    ~/.aliases.bash:
+    ~/.aliases.d:
     # ack will be replaced with rg
     ~/.ackrc:
     ~/.bashrc:
