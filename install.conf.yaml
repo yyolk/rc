@@ -1,0 +1,41 @@
+- defaults:
+    link:
+      relink: true
+- clean: 
+  - "~"
+- link:
+    # For aliases lookup
+    #~/rc: "."
+    ~/.aliases:
+    ~/.aliases.bash:
+    ~/.aliases.d:
+    # ack will be replaced with rg
+    ~/.ackrc:
+    ~/.bashrc:
+    ~/.bash_profile:
+    ~/.vim:
+    ~/.zshrc:
+    ~/.zprofile:
+    ~/.zlogout:
+    ~/.bash_logout.d/seeyouspacecowboy.sh:
+      path: seeyouspacecowboy.sh
+      create: true
+
+- shell:
+    - command: >
+        [ ! -f ~/.vim/autoload/plug.vim ]
+        &&
+        curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+        ||
+        echo "Plug install skipped, plug.vim already installed."
+      description: Install vim plug, if it's not already installed.
+      stdout: true
+    - command: |
+        echo "Before running vim, take a look at these installables for using vim-lsp"
+        cat lsp_deps.txt
+      stdout: true
+      quiet: true
+    - command: >
+        echo -e "You can run `brew bundle -f Brewfile` to install a cloned brewfile, current Brewfiles are: \n$(ls *Brewfile* | awk '{printf("  - %s", $0)}')"
+      stdout: true
+      quiet: true
