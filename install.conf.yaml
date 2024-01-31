@@ -46,6 +46,6 @@
     - command: |
         while IFS= read -r line; do
           eval "git config --global alias.$line"
-        done < <(cat gitalias | sed '1d' | sed "s/'/'\"'\"'/g" | sed 's/ = / '"'"'/g' | sed 's/$/'"'"'/g')
+        done < <(grep -v '\[alias\]' gitalias | sed "s/'/'\"'\"'/g" | sed 's/ = / '"'"'/g' | sed 's/$/'"'"'/g')
       description: Add all gitaliases line by line, with the snapshot aliases file section, gitalias.
 
