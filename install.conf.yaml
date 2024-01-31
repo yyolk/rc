@@ -21,6 +21,7 @@
     ~/.bash_logout.d/seeyouspacecowboy.sh:
       path: seeyouspacecowboy.sh
       create: true
+    ~/.gitignore.global:
 
 - shell:
     - command: >
@@ -40,3 +41,10 @@
         echo -e "You can run `brew bundle -f Brewfile` to install a cloned brewfile, current Brewfiles are: \n$(ls *Brewfile* | awk '{printf("  - %s", $0)}')"
       stdout: true
       quiet: true
+    - command: git config --global core.excludesfile ~/.gitignore.global
+    - command: |
+        while IFS= read -r line; do
+          eval "git config --global alias.$line"
+        done < <(cat gitalias | sed '1d' | sed "s/'/'\"'\"'/g" | sed 's/ = / '"'"'/g' | sed 's/$/'"'"'/g')
+      description: Add all gitaliases line by line, with the snapshot aliases file section, gitalias.
+
