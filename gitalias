@@ -5,7 +5,6 @@ lg = !git lg1
 logg = log --oneline --graph --decorate --all
 s = status
 p = push
-P = pull
 d = diff
 g = grep
 c = commit
