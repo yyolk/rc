@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# https://gist.githubusercontent.com/yyolk/ba07f96e6a289e4e6fde21feab4f0bbb/raw/2a1017b92335aacd72018b9e312a294cc6a0e73c/seeyouspacecowboy.sh
 
 # SEE YOU SPACE COWBOY by DANIEL REHN (danielrehn.com)
 # Displays a timeless message in your terminal with cosmic color effects
