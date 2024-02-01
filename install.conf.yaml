@@ -3,6 +3,8 @@
       relink: true
 - clean: 
   - "~"
+- create:
+  - ~/.local/bin
 - link:
     # For aliases lookup
     #~/rc: "."
@@ -48,4 +50,6 @@
           eval "git config --global alias.$line"
         done < <(grep -v '\[alias\]' gitalias | sed "s/'/'\"'\"'/g" | sed 's/ = / '"'"'/g' | sed 's/$/'"'"'/g')
       description: Add all gitaliases line by line, with the snapshot aliases file section, gitalias.
+    - command: ./install_bin.sh
+      description: Install stand-alone binaries.
 
