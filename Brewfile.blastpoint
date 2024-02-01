@@ -248,26 +248,26 @@ brew "zstd"
 
 # Casks
 # brew list --cask -1 | awk '{printf(cask \%s\\n,)}'
-cask 1password
-cask asana
-cask aws-vpn-client
-cask beekeeper-studio
-cask dbeaver-community
-cask docker
-cask font-gohufont-nerd-font
-cask font-ibm-plex
-cask font-ibm-plex-mono
-cask font-ibm-plex-sans-condensed
-cask font-ibm-plex-sans-jp
-cask font-ibm-plex-serif
-cask google-drive
-cask logi-options-plus
-cask macdown
-cask masscode
-cask pants
-cask pgadmin4
-cask slack
-cask uhk-agent
+cask "1password"
+cask "asana"
+cask "aws-vpn-client"
+cask "beekeeper-studio"
+cask "dbeaver-community"
+cask "docker"
+cask "font-gohufont-nerd-font"
+cask "font-ibm-plex"
+cask "font-ibm-plex-mono"
+cask "font-ibm-plex-sans-condensed"
+cask "font-ibm-plex-sans-jp"
+cask "font-ibm-plex-serif"
+cask "google-drive"
+cask "logi-options-plus"
+cask "macdown"
+cask "masscode"
+cask "pants"
+cask "pgadmin4"
+cask "slack"
+cask "uhk-agent"
 
 # mas (mac app store cli)
 # mas list | awk '{printf(mas \"%s\", id: %s\n, \"\$(2)\", \$(1))}'

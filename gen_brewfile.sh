@@ -35,7 +35,7 @@ brew list --formula -1 | awk '{printf("brew \"%s\"\n", $0)}'
 echo
 echo "# Casks"
 echo """# brew list --cask -1 | awk '{printf("cask \\"%s\\"\\n",)}'"""
-brew list --cask -1 | awk '{printf("cask %s\n", $0)}'
+brew list --cask -1 | awk '{printf("cask \"%s\"\n", $0)}'
 
 echo
 echo "# mas (mac app store cli)"
