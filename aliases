@@ -1,5 +1,7 @@
 # ls
 alias ls="ls -G"
 alias ll="ls -l"
+# ls-go
+alias lsg="ls-go"
 # git
 alias g=git
