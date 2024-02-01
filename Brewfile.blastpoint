@@ -250,6 +250,7 @@ brew "zstd"
 # brew list --cask -1 | awk '{printf(cask \%s\\n,)}'
 cask 1password
 cask asana
+cask aws-vpn-client
 cask beekeeper-studio
 cask dbeaver-community
 cask docker
