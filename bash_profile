@@ -9,6 +9,7 @@
 #   . $(brew --prefix)/etc/bash_completion
 # fi
 
+[ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh
 
 
 
