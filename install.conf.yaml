@@ -4,7 +4,13 @@
 - clean: 
   - "~"
 - create:
-  - ~/.local/bin
+    # Create ~/.local paths
+    ~/.local/bin:
+      mode: 0700
+    ~/.local/lib:
+      mode: 0700
+    ~/.local/share:
+      mode: 0700
 - link:
     # For aliases lookup
     #~/rc: "."
