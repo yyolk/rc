@@ -1,7 +1,7 @@
 rc
 ==
 
-My [`rc`][^1] files
+My `rc`[^rc] files
 
 
 ## Setup
@@ -19,7 +19,7 @@ Run the install script (uses [`dotbot`][dotbot]).
 ```
 
 
-[^1]: `rc` means **R**un **C**ommands - https://en.wikipedia.org/wiki/RUNCOM
+[^rc]: `rc` means **R**un **C**ommands - https://en.wikipedia.org/wiki/RUNCOM
 
 
 [dotbot]: https://github.com/anishathalye/dotbot
