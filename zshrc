@@ -7,10 +7,13 @@
 # }
 
 source ~/.shfunctions.d/gitignore
+source ~/.shfunctions.d/editorconfig
 source ~/.aliases
 
-# Created by `pipx` on 2024-01-09 21:46:25
-export PATH="$PATH:/Users/yolk/.local/bin"
+export EDITOR=vim
+
+# # Created by `pipx` on 2024-01-09 21:46:25
+# export PATH="$PATH:/Users/yolk/.local/bin"
 
 # nvm
 export NVM_DIR="$HOME/.nvm"
