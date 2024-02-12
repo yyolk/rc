@@ -5,3 +5,7 @@ alias ll="ls -l"
 alias lsg="ls-go"
 # git
 alias g=git
+# duf
+alias duf="duf -hide special"
+# xplr
+alias xcd='cd "$(xplr --print-pwd-as-result)"'
