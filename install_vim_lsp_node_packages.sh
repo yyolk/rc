@@ -16,4 +16,7 @@ EOF
 . ./shfunctions.d/nvm
 nvm use node
 # don't quote $VIM_LSP_PKGS so they'll appear on one line
-npm i -g $VIM_LSP_PKGS
+for package in $VIM_LSP_PKGS; do
+  # Install package if it is not already installed
+  npm list -g $package || npm i -g $package
+done

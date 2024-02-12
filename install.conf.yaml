@@ -59,16 +59,22 @@
     - command: ./install_bin.sh
       description: Install stand-alone binaries.
     - command: >
+        . shfunctions.d/nvm
         command -v nvm
         ||
         PROFILE=/dev/null
-        curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+        bash -c
+        '
+          curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+        '
       description: Install nvm if not already installed, do not add to shell config. (It's already there.)
+      stdout: true
     - command: >
         command -v pyenv
         ||
         curl https://pyenv.run | bash
       description: "Install pyenv if not already installed (TODO: and not provided by a brewfile)"
+      stdout: true
     - command: ./install_vim_lsp_node_packages.sh
       stdout: true
 
