@@ -30,6 +30,8 @@
       path: seeyouspacecowboy.sh
       create: true
     ~/.gitignore.global:
+    ~/.config/xplr:
+      path: config/xplr
 
 - shell:
     - command: >
