@@ -40,5 +40,5 @@ brew list --cask -1 | awk '{printf("cask \"%s\"\n", $0)}'
 echo
 echo "# mas (mac app store cli)"
 echo """# mas list | awk '{printf("mas \\\"%s\\\", id: %s\\n", \\\"\\\$(2)\\\", \\\$(1))}'"""
-mas list | ignore_patterns 1Password | awk '{printf("mas \"%s\", id: %s\n", $(2), $(1))}'
+mas list | ignore_patterns 1Password | awk '{printf("mas \"%s\", id: %s\n", $(2), $(1))}' | sort
 #echo $(mas list | awk '{print $1}') \"$(mas list | egrep -o ' ([1-9 a-zA-Z]+) ' | sed 's/^ *//g' | sed 's/ *$//g')\" |  awk '{printf("mas \"%s\", id: %s\n", $(2), $(1))}'
