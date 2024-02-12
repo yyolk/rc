@@ -6,7 +6,6 @@
 # brew tap | awk '{printf(tap \%s\\n, $0)}'
 tap "homebrew/cask-fonts"
 tap "homebrew/services"
-tap "pantsbuild/tap"
 
 # Formula
 # brew list --formula -1 | awk '{printf(brew \%s\\n, $0)}'
