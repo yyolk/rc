@@ -12,6 +12,10 @@ LS_GO_VERSION=v1.0.1
 curl -L https://github.com/acarl005/ls-go/releases/download/$LS_GO_VERSION/ls-go-$OS-$MARCH -o $BIN_PATH/ls-go
 chmod +x $BIN_PATH/ls-go
 
+# vimv - vim mv
+curl -L https://raw.githubusercontent.com/thameera/vimv/master/vimv > ~/.local/bin/vimv 
+chmod +x ~/.local/bin/vimv
+
 # case $(uname -m) in
 #   arm64)
 #     # ls-go v1.0.1
