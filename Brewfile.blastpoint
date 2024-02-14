@@ -282,7 +282,7 @@ cask "slack"
 cask "uhk-agent"
 
 # mas (mac app store cli)
-# mas list | awk '{printf(mas \"%s\", id: %s\n, \"\$(2)\", \$(1))}'
+mas "1Password for Safari", id: 1569813296
 mas "GarageBand", id: 682658836
 mas "Keynote", id: 409183694
 mas "Numbers", id: 409203825
