@@ -41,6 +41,9 @@ brew list --cask -1 | awk '{printf("cask \"%s\"\n", $0)}'
 echo
 echo "# mas (mac app store cli)"
 # I think I was echo'ing the way those portions were generated into each section to not rely on the script, but I guess I forgot the script is portable
+declare -a maslines=()
 mas list | awk '{print $1}' | paste -d " " - <(mas list | egrep -o ' ([1-9 a-zA-Z]+) ' | sed 's/^ *//g' | sed 's/ *$//g') | while read col1 col2; do
   echo "mas \"$col2\", id: $col1"
+done | sort | while read sortedLine; do
+  echo "$sortedLine"
 done
